@@ -1,0 +1,22 @@
+products = [
+    "Apple iPhone",
+    "Samsung Mobile",
+    "Dell Laptop",
+    "HP Laptop",
+    "Boat Headphones",
+    "Nike Shoes"
+]
+
+search = input("Search product: ").lower()
+
+print("\nSearch Results:")
+
+found = False
+
+for product in products:
+    if search in product.lower():
+        print(product)
+        found = True
+
+if not found:
+    print("No product found.")
