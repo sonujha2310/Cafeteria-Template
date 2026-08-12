@@ -1,0 +1,10 @@
+product = input("Enter product name:")
+price = float(input("Enter price:"))
+discount = float(input("Enter discount %:"))
+
+discount_amount = price*discount/100
+final_price = price-discount_amount
+print("\nproduct:", product)
+print("original price:",price)
+print("discount:",discount_amount)
+print("final price:",final_price)
