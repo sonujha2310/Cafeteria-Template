@@ -1,0 +1,12 @@
+product = input("Enter product name: ")
+
+rating = float(input("Enter rating (1-5): "))
+
+if rating >= 4.5:
+    print(product, "⭐⭐⭐⭐⭐ Excellent")
+elif rating >= 3.5:
+    print(product, "⭐⭐⭐⭐ Good")
+elif rating >= 2.5:
+    print(product, "⭐⭐⭐ Average")
+else:
+    print(product, "⭐⭐ Poor")
