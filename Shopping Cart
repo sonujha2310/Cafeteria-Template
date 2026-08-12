@@ -1,0 +1,23 @@
+cart = []
+
+while True:
+    product = input("Enter product name (or 'done'): ")
+
+    if product.lower() == "done":
+        break
+
+    price = float(input("Enter price: "))
+    quantity = int(input("Enter quantity: "))
+
+    total = price * quantity
+    cart.append([product, price, quantity, total])
+
+print("\n--- Shopping Cart ---")
+
+grand_total = 0
+
+for item in cart:
+    print(item[0], "-", item[2], "x", item[1], "=", item[3])
+    grand_total += item[3]
+
+print("Grand Total:", grand_total)
